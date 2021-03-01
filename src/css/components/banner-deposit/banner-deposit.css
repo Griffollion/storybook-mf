@@ -1,0 +1,89 @@
+
+.banner-deposit{
+    background: #F0FCFF;
+    position: relative;
+}
+
+.banner-deposit__content{
+    padding: 30px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
+.banner-deposit__bg{
+    position: absolute;
+    z-index: 0;
+    max-height: 100%;
+}
+
+.banner-deposit__bg.banner-deposit__bg--desc{
+    display: none;
+}
+
+.banner-deposit__bg.banner-deposit__bg--mob{
+    right: 0;
+    top: 0;
+    max-width: 65%;
+}
+
+.banner-deposit__content-img{
+    width: 50%;
+    margin-bottom: 15px;
+    max-width: 200px;
+}
+
+.banner-deposit__content-img img{
+    max-width: 100%;
+}
+
+.banner-deposit__content-title{
+    color: #1B2C49;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 54%;
+    margin-bottom: 40px;
+}
+
+.btn.banner-deposit__content-btn{
+    width: 100%;
+    padding: 6px 20px;
+    height: 40px;
+    line-height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #EF9700;
+    color: #fff;
+    min-width: 130px;
+    -webkit-box-shadow: 0 5px 10px rgba(239, 151, 35, 0.3);
+    box-shadow: 0 5px 10px rgba(239, 151, 35, 0.3);
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+}
+
+.btn.banner-deposit__content-btn:hover{
+    background-color: #eda442;
+    border-color: #eda442;
+    color: #fff;
+    -webkit-box-shadow: 0 1px 5px rgba(239, 151, 35, 0.5);
+    box-shadow: 0 1px 5px rgba(239, 151, 35, 0.5);
+}

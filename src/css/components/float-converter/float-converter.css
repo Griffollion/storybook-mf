@@ -1,0 +1,213 @@
+/*TODO: когда внедрят компонент на новой странице, разнести стили*/
+
+.float-convert label {
+    font-size: 12px;
+    color: #7B818C;
+    font-weight: normal;
+    text-align: left;
+}
+
+.float-convert__btn {
+    position: relative;
+    cursor: pointer;
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.float-convert__btn::before {
+    display: none;
+    content: '';
+    position: absolute;
+    z-index: 11;
+    bottom: -2px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top: none;
+    border-bottom-color: #fff;
+}
+
+.float-convert__btn::after {
+    content: "\e90e";
+    padding-left: 10px;
+    font-family: 'icon-font';
+    color: #CBCED5;
+    transition: color 0.25s;
+    font-weight: normal;
+}
+
+.float-convert__btn:hover::after {
+    color: #00BEE7;
+}
+
+.float-convert__btn.active::before {
+    display: block;
+}
+
+.float-convert.with-width-1 .float-convert__btn,
+.float-convert.with-width-2 .float-convert__btn {
+    display: block;
+    width: auto;
+}
+
+.float-convert__btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    color: #CBCED5;
+    outline: none;
+    font-weight: normal;
+    cursor: pointer;
+    font-size: 12px;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.float-convert__btn-close::before {
+    content: "\e916";
+    font-family: 'icon-font';
+}
+
+.float-convert__sub {
+    z-index: 10;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+    width: 450px;
+    padding: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    right: unset !important;
+    left: 20px;
+}
+
+.float-convert__sub.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.float-convert__list {
+    width: 100%;
+    margin: 10px 0 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+}
+
+.float-convert__item {
+    margin-right: 20px;
+}
+
+.float-convert__input-wrapp {
+    position: relative;
+    width: calc(50% - 10px);
+}
+
+.float-convert__input-wrapp:first-of-type {
+    margin-right: 20px;
+}
+
+.float-convert__input-wrapp:first-of-type::before {
+    content: '=';
+    position: absolute;
+    top: 30px;
+    right: -15px;
+    color: #CBCED5;
+    font-weight: bold;
+}
+
+.float-convert__input-wrapp::after {
+    content: attr(data-currency);
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    color: #CBCED5;
+    pointer-events: none;
+}
+
+.float-convert__input {
+    width: 100%;
+    padding: 8px 45px 8px 10px;
+    border-radius: 2px;
+    font-size: 16px;
+    outline: none;
+}
+
+.float-convert a:not(:hover) {
+    color: #7B818C;
+}
+
+.float-convert__input::-webkit-inner-spin-button, .float-convert__input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.table-banks .float-convert__btn::after {
+    opacity: 0;
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+    color: #00BEE7;
+}
+
+.table-banks tr:hover .float-convert__btn::after {
+    opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+
+    .float-convert__btn {
+        width: 60px;
+    }
+
+    .float-convert__sub {
+        width: calc(100vw - 40px);
+        max-width: 450px;
+        left: 20px;
+        right: 20px;
+        flex-direction: column;
+    }
+
+
+
+    .float-convert__input-wrapp {
+        width: 100%;
+    }
+
+    .float-convert__input-wrapp:first-of-type {
+        margin-right: 0;
+    }
+
+    .float-convert__input-wrapp:first-of-type::before {
+        content: none;
+    }
+
+    .table-banks .float-convert__btn::after {
+        opacity: 1;
+    }
+
+    .float-convert__list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .float-convert__item {
+        margin-bottom: 10px;
+    }
+}

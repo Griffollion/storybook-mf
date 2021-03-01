@@ -1,0 +1,103 @@
+.pagination-wrapp{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.pagination{
+    border: 0;
+    overflow: hidden;
+    font-size: 0;
+    padding: 0 1px 1px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 1px;
+}
+
+.pagination li > span,
+.pagination li > a{
+    padding: 0;
+    margin-left: 0;
+    line-height: 1;
+    color: #1B2C49;
+    background-color: #fff;
+    width: 50px;
+    height: 40px;
+    border: 1px solid #ECEEF2;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-transition: color 0.3s ease, border-color 0.3s ease;
+    -o-transition: color 0.3s ease, border-color 0.3s ease;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.pagination li:not(.disabled) > span:hover,
+.pagination li:not(.disabled) > a:hover{
+    color: #418CCF;
+    border-color: #418CCF;
+}
+
+.pagination li:not(.prev, .next).disabled > span,
+.pagination li:not(.prev, .next).disabled > a{
+    border: none;
+    background-color: #418CCF;
+    padding: 0;
+    font-size: 14px;
+    color: #fff;
+    cursor: default;
+}
+
+.pagination li.prev.disabled > span,
+.pagination li.next.disabled > span,
+.pagination li.prev.disabled > a,
+.pagination li.next.disabled > a{
+    background-color: #e6e9ed;
+    padding: 0;
+    border-color: #e6e9ed;
+    font-size: 14px;
+    color: #7B818C;
+    width: 49px;
+}
+
+.pagination li.prev > span:before,
+.pagination li.next > span:before,
+.pagination li.prev > a:before,
+.pagination li.next > a:before{
+    font-family: 'icon-font';
+    font-size: .6em;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.pagination li.prev > span:before,
+.pagination li.prev > a:before{
+    content: '\e912';
+}
+
+.pagination li.next > span:before,
+.pagination li.next > a:before{
+    content: '\e913';
+}

@@ -1,0 +1,59 @@
+.bank-review-banner{
+    padding: 20px 10px;
+    border: 1px solid #ECEEF2;
+    border-radius: 3px;
+}
+
+.bank-review-banner__img{
+    max-width: 80%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.bank-review-banner__img img{
+    max-width: 100%;
+    display: block;
+    max-height: 35px;
+}
+.bank-review-banner__img--h-auto img{
+    max-height: unset;
+}
+
+.bank-review-banner__rate{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.bank-review-banner__text{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.bank-review-banner__title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bank-review-banner__description{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.bank-review-banner__bottom{
+    margin-top: 15px;
+}

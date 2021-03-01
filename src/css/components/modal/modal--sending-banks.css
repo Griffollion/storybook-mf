@@ -1,0 +1,129 @@
+
+.modal--sending-banks .modal__content{
+    max-width: 600px;
+    width: 90%;
+    padding: 0;
+    height: auto;
+    max-height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal--sending-banks .xxx-modal-close{
+    cursor: pointer;
+    top: 10px;
+}
+
+.modal--sending-banks .modal__title{
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.modal--sending-banks .modal__subtitle{
+    font-size: 14px;
+    line-height: 150%;
+    margin-top: 10px;
+    color: #9299A2;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.modal--sending-banks .modal__in-scroll{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal--sending-banks .modal__content-in{
+   flex-grow: 1;
+}
+
+.modal--sending-banks .modal__content-lists{
+   flex-grow: 1;
+}
+
+.modal--sending-banks .modal__content-lists--bg{
+    background: #FFF3D6;
+}
+
+.modal--sending-banks .modal__content-lists-title{
+    margin-bottom: 15px;
+}
+
+.modal--sending-banks .modal__content-lists{
+    padding: 20px 15px;
+}
+.modal--sending-banks .modal__content-lists label{
+    font-weight: 400;
+}
+
+
+
+.modal--sending-banks .modal__bottom{
+    border-top: 1px solid #ECEEF2;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.modal--sending-banks .list-title{
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.modal--sending-banks .list-wrap {
+    margin-bottom: 30px;
+}
+
+.modal--sending-banks .list-wrap:last-of-type {
+    margin-bottom: 0;
+}
+
+#modalSendingBanks-additional {
+    overflow: auto;
+}
+
+
+#modalSendingBanks-additional .modal__head {
+    border: none;
+    padding: 0;
+    height: 0px;
+    width: 100%;
+}
+
+#modalSendingBanks-additional .modal__close {
+    z-index: 300;
+}
+
+#modalSendingBanks-additional .modal__content {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    overflow: visible;
+    max-height: unset;
+    max-width: 800px;
+    width: 90%;
+    padding: 0;
+    top: 2%;
+}
+
+#modalSendingBanks-additional .modal__content::-webkit-scrollbar {
+    width: 6px;
+    height: 4px
+}
+
+#modalSendingBanks-additional .modal__content::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: #cdcdcd;
+    border-radius: 50px
+}
+
+.modal--sending-banks .list-wrap {
+    width: 100%;
+}

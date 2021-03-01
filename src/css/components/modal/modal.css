@@ -1,0 +1,267 @@
+.modal {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 31;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+	visibility: hidden;
+}
+
+[data-js="show-modal"] {
+	cursor: pointer;
+}
+
+.modal.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.modal__close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	color: #cbced5;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+.modal__close:hover {
+	color: #9e9d9d;
+}
+
+.modal__content {
+	position: relative;
+	overflow: hidden;
+	width: 600px;
+	height: 70vh;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	opacity: 0;
+	transition: transform .45s, opacity .45s;
+	transform: perspective(50px) translateZ(10px);
+}
+
+.modal__content-in {
+	margin-top: 20px;
+}
+
+.modal__title {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.modal__description {
+	font-size: 14px;
+	color: #7b818c;
+	margin-top: 10px;
+}
+
+.modal.active .modal__content {
+	transform: perspective(50px) translateZ(0px);
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.modal__in-scroll {
+	overflow: auto;
+	height: 100%;
+}
+
+.modal__in-scroll::-webkit-scrollbar {
+	width: 6px;
+	height: 4px
+}
+
+.modal__head {
+	-webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+	padding: 25px 0;
+	border-bottom: 1px solid #eceef2
+}
+
+.modal__in-scroll::-webkit-scrollbar-thumb {
+	height: 50px;
+	background-color: #cdcdcd;
+	border-radius: 50px
+}
+
+.modal-overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 30;
+	background-color: rgba(0, 0, 0, .3);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .45s;
+}
+
+.modal-overlay.active {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modal__bottom {
+	display: flex;
+	flex-direction: column;
+}
+
+.modal.modal--city {
+	padding: 15px 10px;
+	overflow-y: auto;
+}
+
+.modal.modal--city .modal__title {
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.modal.modal--city .modal__search {
+	position: relative;
+}
+
+.modal.modal--city .modal__search:before {
+	content: "\e93c";
+	font-family: icon-font;
+	color: #cbced5;
+	position: absolute;
+	left: 15px;
+	top: 22px;
+	transform: translateY(-50%);
+	font-size: 16px;
+}
+
+.modal.modal--city .modal__search input {
+	height: 40px;
+	padding: 15px 15px 15px 45px;
+	background-color: #f4f4f4;
+	border-color: #eceef2;
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+.modal.modal--city .modal__city-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.modal.modal--city .modal__city-list li {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.modal.modal--city .modal__city-list li > a:not(:hover) {
+	color: #263042;
+}
+
+.modal.modal--city .modal__content {
+	position: relative;
+	overflow-y: auto;
+}
+
+/*modal authorization start*/
+
+.modal.modal--authorization {
+	padding: 15px 10px;
+}
+
+.modal.modal--authorization .modal__content {
+	padding: 20px 0;
+	width: 100%;
+	max-width: 700px;
+	max-height: 80%;
+	height: auto;
+	overflow: auto;
+}
+
+.modal.modal--authorization .modal__title {
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	padding: 0 15px;
+}
+
+.modal.modal--authorization .modal__subtitle {
+	font-size: 14px;
+	margin-top: 10px;
+	text-align: center;
+	padding: 0 15px;
+}
+
+.modal.modal--authorization .form {
+	margin-top: 15px;
+	padding: 0 15px 35px 15px;
+	border-bottom: 1px solid #eceef2;
+	position: relative;
+}
+
+.modal.modal--authorization .form__group-line {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 10px;
+	align-items: flex-end;
+}
+
+.modal.modal--authorization .text-on-border {
+	position: absolute;
+	top: 99%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 16px;
+	color: #7b818c;
+	background: white;
+	padding: 5px;
+}
+
+.modal.modal--authorization .form .btn {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.modal.modal--authorization .socials {
+	padding: 20px 15px;
+	border-bottom: 1px solid #eceef2;
+}
+
+.modal.modal--authorization .info-text {
+	padding: 15px 15px 0 15px;
+}
+
+/*modal authorization end*/
+
+/*modal thanks start*/
+.modal.modal--thanks .modal__content {
+	text-align: center;
+	padding: 20px 40px;
+	width: auto;
+	height: auto;
+	max-width: 90%;
+	max-height: 90%;
+}
+
+.modal.modal--thanks .modal__title {
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.modal.modal--thanks .modal__subtitle {
+	font-size: 14px;
+}
+
+/*modal thanks end*/

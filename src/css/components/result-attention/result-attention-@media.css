@@ -1,0 +1,31 @@
+@media screen and (min-width: 769px) {
+    .result-attention {
+        display: flex;
+        align-items: flex-start;
+        padding: 30px;
+    }
+
+    .result-attention__icon-wrapp{
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+
+    .info-error {
+        flex-direction: row;
+        align-items: center;
+        -webkit-flex-flow: row wrap;
+        -webkit-align-content: flex-end;
+    }
+
+
+    .info-error__left {
+        width: 40%;
+        padding-right: 10px;
+        box-sizing: border-box;
+        margin-bottom: 0;
+    }
+    .info-error__right {
+        width: 60%;
+    }
+
+}

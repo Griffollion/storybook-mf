@@ -1,0 +1,80 @@
+.text-content h1,
+.text-content h2,
+.text-content h3,
+.text-content h4,
+.text-content h5,
+.text-content p,
+.text-content ul,
+.text-content ol,
+.text-content table,
+.text-content img {
+    margin-bottom: 10px;
+}
+
+.text-content h1,
+.text-content h2,
+.text-content h3,
+.text-content h4,
+.text-content h5 {
+    margin-top: 20px;
+}
+
+.text-content h1:last-child,
+.text-content h2:last-child,
+.text-content h3:last-child,
+.text-content h4:last-child,
+.text-content h5:last-child,
+.text-content p:last-child,
+.text-content ul:last-child,
+.text-content ol:last-child,
+.text-content table:last-child,
+.text-content img:last-child {
+    margin-bottom: 0;
+}
+
+
+
+.text-content h1:first-child,
+.text-content h2:first-child,
+.text-content h3:first-child,
+.text-content h4:first-child,
+.text-content h5:first-child {
+    margin-top: 0;
+}
+
+.text-content ol {
+    padding-left: 20px;
+}
+.text-content ul li,
+.text-content ol li {
+    margin: 0 0 10px 0;
+}
+
+.text-content ul li:last-child,
+.text-content ol li:last-child {
+    margin-bottom: 0;
+}
+
+.text-content ul {
+    padding: 0;
+    list-style-type: none;
+}
+.text-content ul li {
+    position: relative;
+    padding-left: 15px;
+}
+
+.text-content ul li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 5px;
+    height: 5px;
+    background-color: #00BEE7;
+    border-radius: 50%;
+}
+
+.text-content img {
+    max-width: 100%;
+}

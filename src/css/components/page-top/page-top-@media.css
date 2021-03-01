@@ -1,48 +1,46 @@
-@media screen and (min-width: 768px) {
-    .page-top__title{
-        font-size: 36px;
-    }
-    .page-top__title.page-top__title--min{
-        font-size: 31px;
-    }
+@media screen and (max-width: 1191px) {
+	.conversion-main__inside--mob {
+		top: 70%;
+	}
+}
 
-    .page-top.page-top--flex-content .page-top__content{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+@media screen and (max-width: 991px) {
+	.page-top__title-left {
+		padding: 10px 15px;
+		width: 60%;
+	}
 
-    .page-top.page-top--flex-content .page-top__content-left{
-        margin-right: 5%;
-    }
+	.page-top__title-right {
+		padding-right: 0;
+		width: 40%;
+	}
+}
 
-    .page-top__flex-line{
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+@media screen and (max-width: 768px) {
+	.page-top__title-right {
+		display: none;
+	}
 
-    .page-top__flex-line.page-top__flex-line--reverse{
-        flex-direction: row;
-    }
+	.page-top__title-left {
+		width: 100%;
+		padding: 15px 0 0 0;
+	}
 
-    .page-top__line-item{
-        margin-bottom: 0;
-        margin-right: 20px;
-    }
-    .page-top__line-item:last-of-type{
-        margin-right: 0;
-    }
+	.page-top__text {
+		font-size: 14px;
+		line-height: 21px;
+	}
 
-    .page-top__flex-line.page-top__flex-line--reverse .page-top__line-item{
-        margin-top: 0;
+	.page-top__wrapper {
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
 
-    }
+	.page-top__title-left p:last-child {
+		margin-bottom: 0;
+	}
 
-    .page-top.page-top--product .page-top__advantages{
-        margin-top: 40px;
-    }
-    .page-top.page-top--product .page-top__flex-line{
-        align-items: flex-start;
-    }
+	.page-top__title-inside {
+		padding: 0;
+	}
 }

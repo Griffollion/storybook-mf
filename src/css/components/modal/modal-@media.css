@@ -1,93 +1,30 @@
-@media screen and (min-width: 480px) {
-    .modal.modal--city .modal__city-list li {
-        width: 50%;
-        padding-right: 10px;
-    }
-}
-
 @media screen and (min-width: 768px) {
-    .modal__content {
-        height: 400px;
-    }
-
-    .modal__bottom{
-        flex-direction: row;
-        align-items: center;
-    }
-    .modal.modal--authorization .form{
-        padding: 0 20px 35px 20px;
-        margin-top: 20px;
-    }
-
-    .modal.modal--authorization .form__group-line{
-        display: grid;
-        grid-template-columns: 1fr 1fr minmax(100px, 180px);
-        grid-gap: 20px;
-    }
-    .modal.modal--authorization .form .btn{
-        margin-top: 0;
-    }
-
-    .modal.modal--authorization .modal__title{
-        font-size: 24px;
-        padding: 0 20px;
-    }
-    .modal.modal--authorization .modal__subtitle {
-        font-size: 16px;
-        padding: 0 20px;
-    }
-    .modal.modal--authorization .form{
-        padding: 0 20px 35px 20px;
-    }
-    .modal.modal--authorization .socials{
-        padding: 20px;
-    }
-    .modal.modal--authorization .info-text{
-        padding: 20px 20px 0 20px;
-    }
-
-    .modal.modal--thanks .modal__content{
-        padding: 40px;
-        width: 90%;
-       max-width: 700px;
-    }
-
-    .modal.modal--thanks .modal__title{
-        font-size: 22px;
-        margin-bottom: 15px;
-    }
-    .modal.modal--thanks .modal__subtitle {
-        font-size: 16px;
-    }
+	.modal__content.mob\:modal__content--full {
+		width: auto;
+		height: auto;
+	}
 }
 
-@media screen and (min-width: 1200px) {
-    .modal.modal--city .modal__content {
-        width: 1150px;
-        height: auto;
-        padding: 30px 20px;
-    }
-
-    .modal.modal--city .modal__search input {
-        height: 50px;
-    }
-
-
-    .modal.modal--city .modal__title {
-        font-size: 20px;
-    }
-
-    .modal.modal--city .modal__city-list li {
-        width: 25%;
-    }
-
-    .modal__title{
-        font-size: 24px;
-    }
+@media screen and (min-width: 991px) {
+	.modal__content.tablet\:modal__content--full {
+		width: auto;
+		height: auto;
+	}
 }
 
-@media screen and (max-width: 320px) {
-    .modal.modal--city .modal__search input {
-        padding: 15px 10px 15px 40px
-    }
+@media screen and (min-width: 992px) {
+	.modal.modal--city .modal__content {
+		width: calc(100vw - 20px);
+		max-width: 1180px;
+		margin-right: 10px;
+		margin-left: 10px;
+		height: auto;
+		max-height: 550px;
+		border-radius: 3px;
+	}
+
+	.modal.modal--top {
+		align-items: flex-start;
+		padding-top: 30px;
+	}
 }

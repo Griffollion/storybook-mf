@@ -1,0 +1,27 @@
+@media screen and (min-width: 768px) {
+    .advice-tiles__item:last-child {
+        margin-right: 0;
+    }
+
+    .advice-tiles__item-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .advice-tiles__item-title {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media screen and (min-width: 991px) {
+    .advice-tiles__item-img {
+        height: 230px;
+    }
+    .advice-tiles__item-advices li {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .advice-tiles__item-footer {
+        margin-top: 35px;
+    }
+}

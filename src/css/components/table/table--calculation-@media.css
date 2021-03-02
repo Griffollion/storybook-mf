@@ -1,0 +1,59 @@
+@media screen and (max-width: 767px) {
+    .table.table--calculation.table--mob-2-col .table__body-td:first-of-type .table__body-td-value{
+        color: #7B818C;
+        font-size: 14px;
+    }
+
+    .table.table--calculation.table--mob-2-col .table__body-td:nth-of-type(1){
+        text-align: left;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 5px;
+    }
+
+    .table.table--calculation.table--mob-2-col .table__body-td:nth-of-type(2){
+        text-align: left;
+        padding-right: 5px;
+        padding-left: 0;
+    }
+
+    .table.table--calculation.table--mob-2-col .table__body-td:nth-of-type(3){
+        -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+        order: 4;
+        text-align: left;
+        padding-right: 5px;
+        padding-left: 0;
+    }
+    .table.table--calculation.table--mob-2-col .table__body-td:nth-of-type(4){
+        -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+        order: 5;
+        text-align: right;
+        padding-right: 0;
+        padding-left: 5px;
+    }
+    .table.table--calculation.table--mob-2-col .table__body-td:nth-of-type(5){
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+        text-align: right;
+        padding-right: 0;
+        padding-left: 5px;
+    }
+
+    .table.table--calculation .table__foot-td .btn{
+        height: 44px;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+}

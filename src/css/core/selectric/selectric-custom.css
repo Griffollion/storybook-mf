@@ -1,0 +1,191 @@
+.selectric-container {
+    opacity: 0;
+    pointer-events: none;
+    min-height: 40px;
+}
+
+.selectric-container.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.selectric {
+    display: flex;
+    align-items: center;
+    height: 44px;
+
+    border: 1px solid #CBCED5;
+    border-radius: 3px;
+    padding: 5px 10px;
+    background-color: #fff;
+    transition: border-color .25s;
+}
+
+.selectric-open .selectric {
+    border-color: #418CCF;
+}
+
+
+.selectric-container:hover .selectric,
+.selectric-container:focus .selectric,
+.selectric-container:active .selectric{
+    border-color: #418CCF;
+}
+
+
+.selectric .label {
+    font-size: 16px;
+    line-height: 32px;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    position: relative;
+    padding: 0 20px 0 0 ;
+    text-align: left;
+    font-weight: 400;
+    padding-right: 20px;
+    color: #1B2C49;
+}
+
+.selectric .label:after {
+    content: '\e911';
+    font-family: 'icon-font';
+    color: #263042;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1px;
+    transition: transform .25s;
+    font-size: 0.8em;
+}
+
+.selectric-open .selectric .label:after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.selectric-items li {
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+    font-size: 16px;
+    min-height: 40px;
+    background-color: #fff;
+}
+
+.selectric-items li:hover:not(.highlighted) {
+    background-color: #00BEE7;
+    color: #fff;
+}
+
+.selectric-items li.highlighted {
+    background-color: #F4F4F4;
+}
+
+.selectric-hide-select select {
+    font-size: 16px;
+}
+
+.selectric-items {
+    border: none;
+    border-radius: 0 0 3px 3px;
+    max-height: 280px;
+    overflow-x: auto;
+}
+
+.selectric-inline{
+    display: flex;
+    align-items: center;
+}
+
+.selectric-inline__title{
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.selectric-inline .selectric{
+    display: inline-flex;
+    height: auto;
+    min-height: unset;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.selectric-inline .selectric-container{
+    min-height: unset;
+}
+
+.selectric-inline .selectric .label{
+    font-size: 14px;
+    width: auto;
+    color: #418CCF;
+    line-height: inherit;
+    transition: 0.3s ease;
+}
+
+.selectric-inline .selectric .label:hover, .selectric-inline .selectric .label:hover:after{
+    color: #00BEE7;
+}
+
+.selectric-inline .selectric .label:after{
+    color: #418CCF;
+    transition: 0.3s ease;
+    right: 0;
+}
+
+.selectric-sort .selectric-items li{
+    font-size: 14px;
+}
+
+.selectric-sort .selectric-items{
+    min-width: 180px;
+    right: 0;
+    left: auto;
+}
+
+.selectric.default-change .label{
+    color: #ABB0B9;
+}
+
+.selectric.default-change .label:after{
+    color: #ABB0B9;
+}
+
+.selectric-selectric-zayavky .selectric .button:after {
+    content: '\e901';
+    font-family: 'mainfin-font';
+    font-size: 9px;
+    color: #999;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+    border: none;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 10px;
+    left: inherit;
+    bottom: inherit;
+    width: auto;
+    height: auto;
+}
+
+.selectric-selectric-zayavky .selectric .button {
+    background-color: #fff;
+}
+ .selectric-items::-webkit-scrollbar {
+    width: 6px;
+}
+.selectric-items::-webkit-scrollbar-thumb {
+    background: #898989;
+    border-radius: 4px;
+}
+.selectric-items::-webkit-scrollbar-track {
+    background: #e7e7e7;
+}
+
+.has-error .selectric, .has-error .select2-custom .has-success .select2.select2-container .select2-selection{
+    border-color: #FB4E4E;
+}

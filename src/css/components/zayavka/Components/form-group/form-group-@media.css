@@ -1,0 +1,6 @@
+@media all and (max-width: 768px) {
+    .form-group.verify-btn-block {
+        display: block;
+        left: -10px;
+    }
+}

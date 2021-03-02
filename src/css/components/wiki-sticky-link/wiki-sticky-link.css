@@ -1,0 +1,52 @@
+.wiki-sticky-link{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+    -webkit-box-shadow: 0px -4px 10px rgba(37, 37, 37, 0.15);
+    box-shadow: 0px -4px 10px rgba(37, 37, 37, 0.15);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 15px;
+    z-index: 90;
+    -webkit-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.wiki-sticky-link.active{
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.wiki-sticky-link__text{
+    font-size: 14px;
+    line-height: 19px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.wiki-sticky-link__link{
+    line-height: 1;
+    max-width: 50%;
+}
+
+.wiki-sticky-link.hidden-block{
+    display: none;
+}

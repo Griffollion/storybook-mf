@@ -1,0 +1,214 @@
+.xxx-g-select-wrapp.xxx-valid-input.error::after {
+    content: none;
+}
+
+.xxx-g-select-wrapp {
+    position: relative;
+}
+
+.xxx-g-select-wrapp .wrapper-field {
+    padding: 0;
+}
+
+.xxx-g-select-wrapp .wrapper-input {
+    height: auto;
+}
+
+.xxx-g-select-row--100 {
+    width: 100%;
+}
+
+.xxx-g-select-row--50l {
+    width: 50%;
+    padding-right: 10px;
+}
+
+.xxx-g-select-row--50r {
+    width: 50%;
+    padding-left: 10px;
+}
+
+.xxx-g-select-wrapp--mr {
+    margin-right: 20px;
+}
+
+.xxx-g-select-wrapp.active .xxx-g-select-label {
+    top: 0;
+    font-size: 14px;
+    color: #9299a2;
+    right: auto;
+    background-color: #fff;
+    line-height: 18px;
+    z-index: 150;
+}
+
+.xxx-g-select-wrapp.active .form-group.has-error .xxx-g-select-label {
+    color: #ED2C35;
+}
+
+.xxx-g-select-wrapp.change .xxx-g-select-label {
+    top: 0;
+    font-size: 14px;
+    color: #9299a2;
+    right: auto;
+    background-color: #fff;
+}
+
+.xxx-g-select-wrapp.active .selectric {
+    background-color: #fff;
+}
+
+.xxx-g-select-wrapp.change .selectric {
+    background-color: #fff;
+}
+
+.xxx-g-select-label {
+    z-index: 50;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    right: 30px;
+    padding: 0 5px;
+    color: #adb4bf;
+    background: white;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    pointer-events: none;
+
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+
+    line-height: 42px;
+    text-align: left;
+    margin: 0;
+}
+
+.xxx-g-select-wrapp.xxx-valid-input.valid .select2-container--krajee .select2-selection--single::after {
+    display: none;
+}
+
+.xxx-g-select-wrapp.xxx-valid-input.valid .select2-container--krajee .select2-selection--single {
+    background: #ffffff;
+}
+
+.xxx-g-select-label-eclipse {
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.xxx-g-select-wrapp.has-error .xxx-g-select-label {
+    color: #ED2C35;
+}
+
+.xxx-g-select-wrapp.has-error .selectric {
+    border-color: #ED2C35;
+}
+
+.xxx-g-select-row--100 {
+    width: 100%;
+}
+
+.xxx-g-select-row--50l {
+    width: 50%;
+    padding-right: 10px;
+}
+
+.xxx-g-select-row--50r {
+    width: 50%;
+    padding-left: 10px;
+}
+
+.xxx-g-select-wrapp--mr {
+    margin-right: 20px;
+}
+
+.xxx-g-select-wrapp.change .xxx-g-select-label {
+    top: 0;
+    font-size: 14px;
+    color: #9299a2;
+    right: auto;
+    background-color: #fff;
+    line-height: 18px;
+    z-index: 150;
+}
+
+.xxx-g-select-wrapp.active .selectric {
+    background-color: #fff;
+}
+
+.xxx-g-select-wrapp.change .selectric {
+    background-color: #fff;
+}
+
+.xxx-g-select-wrapp .selectric .button {
+    display: none;
+}
+
+.xxx-g-select-wrapp.xxx-valid-input.error::after {
+    content: none;
+}
+
+.xxx-request-loan .selectric {
+    height: 44px;
+    min-height: 44px;
+}
+
+.form-group .selectric {
+    background: white;
+    border-color: #eceef2;
+}
+
+.selectric-items li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5px 30px 5px 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 16px;
+    min-height: 40px;
+    background-color: #fff;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.selectric-items li.highlighted {
+    background-color: #f4f4f4 !important;
+}
+
+.selectric-items li.selected {
+    color: #adb4bf;
+    position: relative;
+}
+
+.selectric-hover .selectric {
+    border-color: #c4c4c4;
+}
+
+.selectric-items li:hover:not(.highlighted) {
+    background-color: #00bee7;
+    color: #fff;
+}
+
+.selectric-open .selectric-items {
+    z-index: 151;
+}
+
+.selectric-open .selectric,
+.selectric-focus .selectric {
+    border-color: #00bee7;
+}
+
+.form-group .form-group__inside select {
+    border-color: #eceef2;
+}
+
+.select2-container--krajee .select2-selection--single {
+    padding-right: 25px;
+    background: white;
+}

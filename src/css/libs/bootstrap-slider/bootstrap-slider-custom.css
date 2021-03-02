@@ -1,0 +1,75 @@
+.bootstrap-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.bootstrap-slider__init {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.bootstrap-slider .bootstrap-slider__text {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.bootstrap-slider .slider {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+.bootstrap-slider .slider.slider-horizontal,
+.bootstrap-slider .slider.slider-horizontal .slider-track {
+    height: 3px;
+}
+
+.bootstrap-slider .slider-selection {
+    background: #00BEE7;
+    box-shadow: none;
+}
+
+.bootstrap-slider .slider-track-low,
+.bootstrap-slider .slider-track-high {
+    box-shadow: none;
+    border-radius: 2px;
+    background: #fff;
+}
+
+.bootstrap-slider .slider-handle {
+    width: 15px;
+    height: 15px;
+    background: #00BEE7;
+    box-shadow: none;
+    z-index: 2;
+}
+
+.bootstrap-slider .slider-handle:before {
+    content: '';
+    width: 9px;
+    height: 9px;
+    background-color: #fff;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    border-radius: 50%;
+}
+
+.bootstrap-slider.bootstrap-slider--border .bootstrap-slider__text{
+    border: 1px solid #CBCED5;
+}
+
+.bootstrap-slider.bootstrap-slider--border .bootstrap-slider__text:focus, .bootstrap-slider.bootstrap-slider--border .bootstrap-slider__text:hover{
+    border-color: #418CCF!important;
+}
+
+.bootstrap-slider.bootstrap-slider--border .slider-track{
+    background-image: unset;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.bootstrap-slider.bootstrap-slider--border .slider-track-high{
+   background: transparent;
+}

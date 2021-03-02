@@ -1,0 +1,29 @@
+.menu-advices {
+	line-height: 1.25;
+}
+.menu-advices__title {
+	font-size: 18px;
+	margin-bottom: 15px;
+	font-weight: 700;
+}
+
+.menu-advices__list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.menu-advices__list li {
+	margin-bottom: 10px;
+}
+
+.menu-advices__list li:last-child {
+	margin-bottom: 0;
+}
+
+.menu-advices__list li>a:not(:hover) {
+	color: #1B2C49;
+}
+
+.menu-advices__footer {
+	margin-top: 10px;
+}

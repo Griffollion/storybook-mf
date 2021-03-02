@@ -1,49 +1,55 @@
-.page-top {
-	background: rgba(114, 200, 239, 0.27);
+
+.page-top__title{
+    font-size: 26px;
+    margin-bottom: 0;
 }
 
-.page-top__wrapper {
-	position: relative;
-	padding-bottom: 140px;
-	padding-top: 10px;
+.page-top__subtitle{
+    margin-top: 10px;
+    font-size: 14px;
 }
 
-.page-top__title {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+.page-top .breadcrumb{
+    padding-top: 0;
 }
 
-.page-top__image {
-	max-width: 330px;
+.page-top.page-top--flex-content .page-top__content{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
 }
 
-.page-top__title-inside {
-	padding: 10px 100px 10px 100px;
+.page-top__flex-line{
+    display: flex;
+    flex-direction: column;
 }
 
-.page-top__title-left {
-	width: 70%;
-	padding: 40px 10px 0 100px;
+.page-top__flex-line.page-top__flex-line--reverse{
+    flex-direction: column-reverse;
 }
 
-.page-top__title-right {
-	width: 30%;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: end;
-	-ms-flex-pack: end;
-	justify-content: flex-end;
-	-webkit-box-align: start;
-	-ms-flex-align: start;
-	align-items: flex-start;
-	padding-right: 40px;
+.page-top__line-item{
+    margin-bottom: 15px;
 }
 
-.page-top__text {
-	font-size: 18px;
-	line-height: 29px;
-	color: #0e1829;
-	margin-bottom: 0;
+.page-top__line-item:last-of-type{
+    margin-bottom: 0;
+}
+
+.page-top__line-item.page-top__line-item--max-width{
+    max-width: 700px;
+}
+
+.page-top__flex-line.page-top__flex-line--reverse .page-top__line-item{
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.page-top__flex-line.page-top__flex-line--reverse .page-top__line-item:last-of-type{
+    margin-top: 0;
+
+}
+
+.page-top.page-top--product .page-top__advantages{
+    margin-top: 15px;
 }

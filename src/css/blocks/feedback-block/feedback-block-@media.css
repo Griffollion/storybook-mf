@@ -1,0 +1,16 @@
+@media screen and (min-width: 768px) {
+    .feedback-block__subtitle{
+        margin-top: 20px;
+    }
+    .feedback-block__stars .stars__title{
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .feedback-block--max-width{
+        max-width: 700px;
+    }
+}

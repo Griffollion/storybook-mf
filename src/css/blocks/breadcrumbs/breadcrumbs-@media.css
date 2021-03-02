@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+    .breadcrumbs{
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+
+    .breadcrumb > li:last-of-type{
+        padding-right: 15px;
+    }
+}

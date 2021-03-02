@@ -1,0 +1,85 @@
+.recommend-form {
+    background: #FFFADE;
+    border-radius: 5px;
+    position: relative;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.recommend-form:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background: #FFFADE;
+    -webkit-transform: rotate(45deg) translateX(-50%);
+    -moz-transform: rotate(45deg) translateX(-50%);
+    -ms-transform: rotate(45deg) translateX(-50%);
+    -o-transform: rotate(45deg) translateX(-50%);
+    transform: rotate(45deg) translateX(-50%);
+}
+
+.recommend-form__title {
+    font-size: 20px;
+    line-height: 24px;
+    color: #333E50;
+    font-family: 'lato black', sans-serif;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.recommend-form__text {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.recommend-form__list {
+    padding-left: 0;
+}
+
+.recommend-form__list-item {
+    font-size: 18px;
+    line-height: 22px;
+    color: #333E50;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.recommend-form__list-item:last-child {
+    margin-bottom: 0;
+}
+
+.recommend-form__list-item:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    height: 5px;
+    width: 5px;
+    background: #DADEE2;
+    border-radius: 50%;
+}
+
+.recommend-form__btn {
+    width: 100%;
+    margin-top: 30px;
+    height: 50px;
+}
+
+.recommend-form--low {
+    background: #FFEEEE;
+}
+
+.recommend-form--low:before {
+    background: #FFEEEE;
+}

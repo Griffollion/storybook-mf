@@ -1,0 +1,29 @@
+.breadcrumb {
+    padding: 15px 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    border-radius: 0;
+    font-weight: 400;
+    color: #959595;
+    font-size: 14px;
+}
+.breadcrumb a {
+    font-weight: 400;
+    color: #ABB0B9;
+}
+.breadcrumb > li {
+    display: inline-block;
+}
+.breadcrumb > li + li:before {
+    color: #ABB0B9;
+    font-family: 'icon-font' !important;
+    content: "\e913";
+    padding: 0 7px 0 7px ;
+    position: relative;
+    font-size: 10px;
+    vertical-align: middle;
+    bottom: 1px;
+}
+.breadcrumb > .active {
+    color: #1B2C49;
+}

@@ -1,0 +1,49 @@
+.xxx-request-loan--sending-banks .xxx-request-loan__center {
+    background: transparent;
+    margin-top: 0;
+    padding-bottom: 30px;
+}
+
+.xxx-request-loan--sending-banks .xxx-request-loan__center h1,
+.xxx-request-loan--sending-banks .xxx-request-loan__center h2 {
+    text-align: center;
+}
+
+.xxx-request-loan--sending-banks .xxx-request-loan__item {
+    padding-bottom: 10px;
+}
+
+.xxx-request-loan--sending-banks .xxx-request-loan__bottom {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.xxx-request-loan--sending-banks .xxx-request-loan__bottom.mass-send button {
+    min-width: 180px;
+}
+
+.xxx-request-loan--sending-banks .selectric-open {
+    z-index: unset;
+}
+
+.xxx-request-loan--sending-banks .selectric-open .selectric-items {
+    z-index: 162;
+}
+
+.xxx-request-loan--sending-banks .selectric .label:after {
+    content: none;
+}
+
+
+.xxx-request-loan--sending-banks .xxx-request-loan__bottom {
+
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ECEEF2;
+}
+
+.xxx-request-loan--sending-banks.xxx-container-medium {
+    border-bottom: 0;
+}

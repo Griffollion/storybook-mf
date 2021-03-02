@@ -1,0 +1,15 @@
+@media screen and (min-width: 768px) {
+    .reviews-preview__title{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+    .reviews-preview__item-text{
+        font-size: 14px;
+    }
+    .reviews-preview__item-title{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

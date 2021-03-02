@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "icon-font";
+    src: url("/fonts/remaster/icon-font.eot");
+    src: url("/fonts/remaster/icon-font.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/remaster/icon-font.woff2") format("woff2"),
+    url("/fonts/remaster/icon-font.woff") format("woff"),
+    url("/fonts/remaster/icon-font.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

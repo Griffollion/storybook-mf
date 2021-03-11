@@ -1,0 +1,45 @@
+.reviews-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 20px 15px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.reviews-banner__text {
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+
+.reviews-banner__title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.reviews-banner__description {
+    font-size: 14px;
+    color: #7B818C;
+    margin-top: 10px;
+}
+
+.reviews-banner__img {
+    display: none;
+    position: absolute;
+    bottom: -20px;
+    left: 58%;
+    width: 150px;
+}
+
+.reviews-banner__img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
+}

@@ -1,0 +1,27 @@
+@media screen and (min-width: 768px){
+	.product-request-container {
+		display: flex;
+	}
+
+	.product-request-container__cell {
+		width: 50%;
+		padding: 40px 30px;
+	}
+
+	/* product-request-container__cell--img */
+	.product-request-container__cell.product-request-container__cell--img {
+		padding: 0;
+		min-height: 420px;
+	}
+	/* product-request-container__cell--img */
+
+	.product-request-container__icon {
+		height: 60px;
+		margin-bottom: 25px;
+	}
+
+	.product-request-container__title {
+		font-size: 24px;
+		margin-bottom: 25px;
+	}
+}

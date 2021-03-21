@@ -1,0 +1,7 @@
+@media screen and (min-width: 768px) {
+    .rate-info-min {
+        padding: 20px;
+        display: inline-flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,129 @@
+.table-classic {
+	position: relative;
+	overflow: auto;
+}
+
+/* table-classic--mh-600 */
+.table-classic.table-classic--mh-600 {
+	max-height: 600px;
+}
+
+/* table-classic--mh-600 //end */
+
+/* table-classic--no-wrap */
+.table-classic.table-classic--no-wrap th,
+.table-classic.table-classic--no-wrap td {
+	white-space: nowrap;
+}
+
+/* table-classic--no-wrap //end */
+
+/* table-classic--head-sticky */
+.table-classic.table-classic--head-sticky thead th,
+.table-classic.table-classic--head-sticky thead td {
+	position: sticky;
+	top: 0;
+}
+
+/* table-classic--head-sticky //end */
+
+/* table-classic--customize-scroll */
+.table-classic.table-classic--customize-scroll::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+.table-classic.table-classic--customize-scroll {
+	scrollbar-width: thin;
+	scrollbar-color: 	#CBCED5 #ECEEF2;
+}
+
+.table-classic.table-classic--customize-scroll::-webkit-scrollbar-track {
+	background: #ECEEF2;
+}
+.table-classic.table-classic--customize-scroll::-webkit-scrollbar-thumb {
+	background-color: 	#CBCED5;
+}
+
+
+/* table-classic--customize-scroll //end */
+
+.table-classic table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.table-classic thead th,
+.table-classic thead td,
+.table-classic tbody td,
+.table-classic tfoot td {
+	padding: 15px 10px;
+	min-width: 80px;
+	box-sizing: border-box;
+	border-spacing: 0;
+}
+
+.table-classic thead th:first-child,
+.table-classic thead td:first-child,
+.table-classic tbody td:first-child,
+.table-classic tfoot td:first-child {
+	padding-left: 20px;
+}
+
+.table-classic thead th:last-child,
+.table-classic thead td:last-child,
+.table-classic tbody td:last-child,
+.table-classic tfoot td:last-child {
+	padding-right: 20px;
+}
+
+.table-classic thead th,
+.table-classic thead td {
+	background-color: #f4f4f4;
+	font-size: 14px;
+	color: #7b818c;
+	font-weight: 400;
+	text-align: left;
+}
+
+.table-classic tbody td {
+	font-size: 16px;
+	border-bottom: 1px solid #eceef2;
+}
+
+.table-classic tr.hidden {
+	display: none;
+}
+
+.table-classic tr.labeled td {
+	background-color: #e8f2fe;
+	padding-top: 19px;
+}
+
+.table-classic tr.labeled td:first-child {
+	position: relative;
+}
+
+.table-classic tr.labeled td:first-child:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 1px 10px;
+	border-radius: 0 0 3px 3px;
+	font-size: 10px;
+	pointer-events: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: inline-flex;
+	white-space: nowrap;
+}
+
+.table-classic tr.labeled.labeled--blue td:first-child:before {
+	color: #fff;
+	background-color: #418ccf;
+}
+
+.table-classic tr.labeled.labeled--bank-clients td:first-child:before {
+	content: "для клиентов банка";
+}

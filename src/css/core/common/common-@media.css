@@ -72,16 +72,6 @@
     /*visible-hide #end*/
 }
 
-@media screen and (min-width: 1024px) {
-    /*visible-hide*/
-    .desk-visible {
-        display: block!important;
-    }
-    .desk-visible.desk-visible--flex { display: flex!important; }
-    .desk-visible.desk-visible--grid { display: grid!important; }
-    /*visible-hide #end*/
-
-}
 
 @media screen and (min-width: 1024px) {
     .desk-visible {
@@ -115,3 +105,4 @@
     }
     /*visible-hide #end*/
 }
+

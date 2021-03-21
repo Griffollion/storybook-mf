@@ -1,0 +1,75 @@
+@media screen and (min-width: 768px) {
+    .advantages-list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .advantages-list__item {
+        border: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: calc(100% / 3);
+        padding-right: 10px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .advantages-list__item.advantages-list__item--width-auto {
+        width: auto;
+    }
+
+    .advantages-list__item:last-of-type {
+        padding-right: 0;
+    }
+
+    .advantages-list__item-title {
+        padding-right: 0;
+        color: #418CCF;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .advantages-list__item-description {
+        padding-left: 0;
+        margin-top: 5px;
+        width: 100%;
+        color: #263042;
+    }
+
+    .advantages-list.advantages-list--black .advantages-list__item-title {
+        color: #263042;
+    }
+
+    .advantages-list.advantages-list--big .advantages-list__item-title {
+        font-size: 22px;
+    }
+
+    /* advantages-list--revert  */
+    .advantages-list.advantages-list--revert .advantages-list__item-description {
+        font-size: 18px;
+        order: 1;
+        padding: 0;
+    }
+
+    .advantages-list.advantages-list--revert .advantages-list__item-title {
+        order: 0;
+        padding: 0;
+    }
+
+    .advantages-list.advantages-list--big.advantages-list--revert .advantages-list__item-description {
+        font-size: 22px;
+    }
+
+    .advantages-list.advantages-list--big.advantages-list--revert .advantages-list__item-title {
+        font-size: 14px;
+    }
+    /* advantages-list--revert //end  */
+
+    /* advantages-list--grid  */
+    .advantages-list.advantages-list--grid-v1 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 30px;
+    }
+    /* advantages-list--grid  //end */
+}

@@ -1,0 +1,103 @@
+.declaration-icon-block {
+	border: 1px solid #eceef2;
+	padding: 30px 15px;
+}
+
+/* declaration-icon-block--with-subtitle */
+.declaration-icon-block.declaration-icon-block--with-subtitle .declaration-icon-block__title {
+	margin-bottom: 10px;
+}
+
+.declaration-icon-block.declaration-icon-block--with-subtitle .declaration-icon-block__subtitle {
+	margin-bottom: 30px;
+}
+/* declaration-icon-block--with-subtitle //end */
+
+
+/* .declaration-icon-block--labeled */
+.declaration-icon-block.declaration-icon-block--labeled {
+	padding-top: 5px;
+}
+
+.declaration-icon-block.declaration-icon-block--labeled .declaration-icon-block__label {
+	width: calc(100% + 20px);
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+/* .declaration-icon-block--labeled //end */
+
+.declaration-icon-block__label {
+	display: flex;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.declaration-icon-block__label [class^="icon-"],
+.declaration-icon-block__label .icon {
+	color: #2ac769;
+}
+
+.declaration-icon-block__label-content {
+	background: #f4f4f4;
+	border-radius: 3px;
+	padding: 10px;
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+
+.declaration-icon-block__label-text {
+	color: #7b818c;
+	font-size: 14px;
+	border-bottom: 1px dashed #7b818c;
+}
+
+.declaration-icon-block__title {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.declaration-icon-block__subtitle {
+	font-size: 16px;
+	text-align: center;
+}
+
+.declaration-icon-block__item-description {
+	font-size: 16px;
+	margin-top: 15px;
+}
+
+.declaration-icon-block__list {
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: 1fr;
+}
+
+.declaration-icon-block__item {
+	text-align: center;
+}
+
+.declaration-icon-block__item-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	height: 50px;
+	max-width: 100%;
+	min-width: 20px;
+}
+
+.declaration-icon-block__item-img img {
+	height: 100%;
+	width: auto;
+	max-width: 100%;
+	display: block;
+}
+
+.declaration-icon-block__item-title {
+	font-size: 18px;
+	font-weight: bold;
+}

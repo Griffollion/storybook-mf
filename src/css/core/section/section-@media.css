@@ -4,13 +4,24 @@
         padding-bottom: 50px;
     }
 
+    /* section--static  */
+    .section.section--static {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    /* section--static //end */
+
+    /* section--small */
     .section.section--small {
         padding-top: 30px;
         padding-bottom: 30px;
     }
+    /* section--small //end */
+
+    /* section--small-static */
     .section.section--small-static {
         padding-top: 15px;
         padding-bottom: 15px;
     }
-
+    /* section--small-static //end */
 }

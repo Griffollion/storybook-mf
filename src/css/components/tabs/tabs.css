@@ -39,6 +39,7 @@
     width: 100%;
 }
 
+/* tabs--nav-white */
 .tabs.tabs--nav-white .tabs__nav-btn {
     color: #fff;
 
@@ -49,8 +50,56 @@
 }
 
 .tabs.tabs--nav-white .tabs__nav-item.active .tabs__nav-btn:before {
-    background-color:  #00BEE7;
+    background-color: #00BEE7;
 }
+
+/* tabs--nav-white //end */
+
+/* tabs__nav--bg-gray */
+.tabs__nav.tabs__nav--bg-gray {
+    background: #F4F4F4;
+}
+/* tabs__nav--bg-gray //end */
+
+/* tabs__nav--bold */
+.tabs__nav.tabs__nav--bold .tabs__nav-btn {
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+/* tabs__nav--bold //end */
+
+/* tabs__nav--line-blue */
+.tabs__nav.tabs__nav--line-blue .tabs__nav-btn:hover {
+    color: #00BEE7;
+}
+
+.tabs__nav.tabs__nav--line-blue .tabs__nav-item.active .tabs__nav-btn:before {
+    background-color: #00BEE7;
+}
+
+/* tabs__nav--line-blue //end */
+
+
+/* tabs__nav--medium */
+.tabs__nav.tabs__nav--medium .tabs__nav-btn {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/* tabs__nav--medium //end */
+
+/* tabs__nav--no-margine */
+.tabs__nav.tabs__nav--no-margine {
+    margin: 0;
+}
+/* tabs__nav--no-margine //end */
+
+/* tabs__nav--large */
+.tabs__nav.tabs__nav--large .tabs__nav-btn {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 16px;
+}
+/* tabs__nav--large //end */
 
 .tabs__container {
     display: none;

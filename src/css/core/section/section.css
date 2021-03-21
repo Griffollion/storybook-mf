@@ -1,19 +1,35 @@
 .section {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    position: relative;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	position: relative;
 }
 
-.section.section--small {
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.section.section--small-static{
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
+/* section--static  */
 .section.section--static {
-    position: static;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
+/* section--static //end */
+
+/* section--small */
+.section.section--small {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+/* section--small //end */
+
+/* section--small-static */
+.section.section--small-static {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+/* section--small-static //end */
+
+/* section--p-static */
+.section.section--p-static {
+	position: static;
+}
+
+/* section--p-static //end */

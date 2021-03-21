@@ -1,0 +1,40 @@
+.rate-info-min {
+    background: #F4F4F4;
+    border-radius: 3px;
+    padding: 20px 15px;
+}
+
+.rate-info-min__title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.rate-info-min__btns {
+    display: flex;
+    align-items: center;
+}
+
+.rate-info-min__btn {
+    margin-right: 50px;
+    color: #418CCF;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rate-info-min__btn:hover {
+    color: #00BEE7;
+}
+
+.rate-info-min__btn:last-of-type {
+    margin-right: 0;
+}
+
+.rate-info-min__btn-icon {
+    font-size: 19px;
+    margin-right: 10px;
+}
+
+.rate-info-min__action {
+    margin-top: 20px;
+}
